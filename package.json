@@ -4,9 +4,10 @@
   "description": "Brunch Hugo Example",
   "main": "index.js",
   "dependencies": {
-    "bower": "^1.7.1"
   },
   "devDependencies": {
+    "ansi-color": "^0.2.1",
+    "bower": "^1.7.1",
     "brunch": "^2.0.4",
     "javascript-brunch": "^1.8.0",
     "sass-brunch": "^1.9.2"
