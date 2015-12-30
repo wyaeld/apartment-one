@@ -1,3 +1,5 @@
-$red: red;
+$red: #FF0000;
 
-.red {color: $red;}
+.reddish {
+  color: darken($red, 20%);
+}

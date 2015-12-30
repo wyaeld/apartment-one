@@ -2,7 +2,6 @@
   "name": "brunch-hugo-example",
   "version": "0.0.1",
   "description": "Brunch Hugo Example",
-  "main": "index.js",
   "dependencies": {
   },
   "devDependencies": {
@@ -13,8 +12,8 @@
     "sass-brunch": "^1.9.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Brad Murray <wyaeld@gmail.com>",
+  "license": "ISC",
+  "private": true
 }
