@@ -1,0 +1,21 @@
+{
+  "name": "brunch-hugo-example",
+  "description": "Brunch Hugo Example",
+  "main": "index.js",
+  "authors": [
+    "Brad Murray <wyaeld@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
