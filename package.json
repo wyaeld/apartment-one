@@ -6,7 +6,11 @@
   "dependencies": {
     "bower": "^1.7.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "brunch": "^2.0.4",
+    "javascript-brunch": "^1.8.0",
+    "sass-brunch": "^1.9.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
