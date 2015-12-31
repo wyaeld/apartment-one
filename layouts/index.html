@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<div class="page-wrapper">
+
+    <section id="main">
+      <h2>Recent Pages</h2>
+      <div>
+        {{ range first 10 .Data.Pages }}
+            {{ .Render "summary"}}
+        {{ end }}
+      </div>
+    </section>
+
+</div>
+<!--End pagewrapper-->
+
+{{ partial "footer.html" . }}
