@@ -10,3 +10,5 @@ src/vendor
 
 # hugo intermediate dirs
 #hugo/static
+
+npm-debug.log
