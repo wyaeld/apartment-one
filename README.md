@@ -18,5 +18,6 @@ https://www.netlify.com/blog/2015/10/26/a-step-by-step-guide-brunch-on-netlify
 
 ```
 npm install -g brunch
+npm install
 
 ```
