@@ -9,6 +9,7 @@ bower_components
 src/vendor
 
 # hugo intermediate dirs
-#hugo/static
+static
+public
 
 npm-debug.log
