@@ -21,3 +21,11 @@ npm install -g brunch
 npm install
 
 ```
+
+## Development
+
+Open 2 terminals
+```
+brunch watch
+hugo serve
+```
