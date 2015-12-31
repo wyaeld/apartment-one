@@ -18,4 +18,4 @@ module.exports = config:
 
     stylesheets:
       joinTo:
-        'css/app.css'
+        'stylesheets/app.css'
