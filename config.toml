@@ -13,6 +13,11 @@ showChildren = true
 [menu]
 
   [[menu.main]]
+  name       = "Pages"
+  url        = "/video-tour/"
+  weight = 15
+
+  [[menu.main]]
   name       = "Homepage One"
   url        = "/index-1/"
   parent     = "Home"
