@@ -1,13 +1,20 @@
-{{ partial "dreamland/head.html" . }}
+{{ partial "head.html" . }}
 
 <div class="page-wrapper">
     <!-- Preloader -->
     <div class="preloader"></div>
 
-{{ partial "dreamland/header-style-two.html" . }}
+    <header class="main-header header-style-two">
+      {{ partial "header-topbar.html" . }}
+      {{ partial "header-navbar.html" . }}
+    </header>
+
+<!-- {{ partial "dreamland/header-style-two.html" . }} -->
+
 
 {{ .Content }}
 
+{{ partial "dreamland/main-footer.html" . }}
 
 </div>
 <!--End pagewrapper-->

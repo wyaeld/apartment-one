@@ -1,3 +1,116 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "http://dreamland.blackcedar.co.nz"
+languageCode = "en-nz"
+title = "Dreamland wth Brunch"
+
+# SectionPages creates an automagic menu
+#SectionPagesMenu = "main"
+
+showChildren = true
+
+[menu]
+  [[menu.main]]
+  identifier = "home"
+  name       = "Home"
+  url        = "/index-1/"
+  hasChildren= true
+  weight = 10
+
+  [[menu.main]]
+  identifier = "one"
+  name       = "Homepage One"
+  url        = "/index-1/"
+  parent     = "home"
+
+  [[menu.main]]
+  identifier = "two"
+  name       = "Homepage Two"
+  url        = "/index-2/"
+  parent     = "home"
+
+  [[menu.main]]
+  identifier = "single"
+  name       = "One page Style"
+  url        = "/index-3/"
+  parent     = "home"
+
+  [[menu.main]]
+  identifier = "pages"
+  name       = "Pages"
+  url        = "/video-tour/"
+  weight = 20
+
+  [[menu.main]]
+  identifier = "gallery"
+  name       = "Gallery"
+  url        = "/gallery/"
+  parent     = "pages"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "video-tour"
+  name       = "Video Tour"
+  url        = "/video-tour/"
+  parent     = "pages"
+  weight = 20
+
+  [[menu.main]]
+  identifier = "sidebar"
+  name       = "Sidebar Page"
+  url        = "/blog-two-column/"
+  parent     = "pages"
+  weight = 30
+
+  [[menu.main]]
+  identifier = "left-sidebar"
+  name       = "Left Sidebar"
+  url        = "/blog-leftbar/"
+  parent     = "sidebar"
+  weight = 110
+
+  [[menu.main]]
+  identifier = "right-sidebar"
+  name       = "Right Sidebar"
+  url        = "/blog/"
+  parent     = "sidebar"
+  weight = 120
+
+  [[menu.main]]
+  identifier = "blog-details"
+  name       = "Blog Details"
+  url        = "/blog-detail/"
+  parent     = "sidebar"
+  weight = 130
+
+
+  [[menu.main]]
+  identifier = "about"
+  name       = "About Us"
+  url        = "/about/"
+  weight = 30
+
+  [[menu.main]]
+  identifier = "blog"
+  name       = "Blog"
+  url        = "/blog/"
+  weight = 40
+
+  [[menu.main]]
+  identifier = "blog-page"
+  name       = "Blog"
+  url        = "/blog/"
+  parent     = "blog"
+  weight = 110
+
+  [[menu.main]]
+  identifier = "blog-two-column"
+  name       = "Blog Two Column"
+  url        = "/blog-two-column/"
+  parent     = "blog"
+  weight = 120
+
+  [[menu.main]]
+  identifier = "blog-details-again"
+  name       = "Blog Details"
+  url        = "/blog-detail/"
+  parent     = "blog"
+  weight = 130

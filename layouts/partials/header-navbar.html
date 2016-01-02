@@ -1,0 +1,59 @@
+<!-- Header Lower -->
+        <div class="header-lower">
+          <div class="auto-container">
+              <div class="lower-outer clearfix">
+                    <!--Logo-->
+                    <div class="logo"><a href="#"><img src="/images/logo-3.png" alt="Bulldozer" title="Dream Land"></a></div>
+
+                    <!--Right Container-->
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation">
+                            {{ $currentNode := . }}
+                            {{ range .Site.Menus.main }}
+                              {{ if .HasChildren }}
+                              <li class="dropdown{{if $currentNode.HasMenuCurrent "main" . }} current{{end}}">
+                                <a href="{{ .URL }}">{{ .Name }}</a>
+                                <ul>
+                                  {{ range .Children }}
+                                    {{ if .HasChildren }}
+                                    <li class="dropdown">
+                                      <a href="{{ .URL }}">{{ .Name }}</a>
+                                      <ul>
+                                        {{ range .Children }}
+                                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                        {{end}}
+                                      </ul>
+                                    </li>
+                                    {{else}}
+                                    <li>
+                                      <a href="{{ .URL }}">{{ .Name }}</a>
+                                    </li>
+                                    {{end}}
+                                  {{end}}
+                                </ul>
+                              </li>
+                              {{else}}
+                              <li class="{{if $currentNode.IsMenuCurrent "main" . }} current{{end}}">
+                                <a href="{{ .URL }}">{{ .Name }}</a>
+                              </li>
+                              {{end}}
+                            {{end}}
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+              </div>
+            </div>
+
+        </div>
