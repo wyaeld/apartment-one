@@ -23,7 +23,7 @@
                             {{ $currentNode := . }}
                             {{ range .Site.Menus.main }}
                               {{ if .HasChildren }}
-                              <li class="dropdown{{if $currentNode.HasMenuCurrent "main" . }} current{{end}}">
+                              <li class="dropdown{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} current{{end}}">
                                 <a href="{{ .URL }}">{{ .Name }}</a>
                                 <ul>
                                   {{ range .Children }}
@@ -45,7 +45,7 @@
                                 </ul>
                               </li>
                               {{else}}
-                              <li class="{{if $currentNode.IsMenuCurrent "main" . }} current{{end}}">
+                              <li class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} current{{end}}">
                                 <a href="{{ .URL }}">{{ .Name }}</a>
                               </li>
                               {{end}}

@@ -83,18 +83,6 @@ showChildren = true
 
 
   [[menu.main]]
-  identifier = "about"
-  name       = "About Us"
-  url        = "/about/"
-  weight = 30
-
-  [[menu.main]]
-  identifier = "blog"
-  name       = "Blog"
-  url        = "/blog/"
-  weight = 40
-
-  [[menu.main]]
   identifier = "blog-page"
   name       = "Blog"
   url        = "/blog/"
