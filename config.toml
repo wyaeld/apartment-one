@@ -43,6 +43,7 @@ showChildren = true
 
   [[menu.main]]
   name       = "Video Tour"
+  identifier   = "video-tour-menu-item"
   url        = "/video-tour/"
   parent     = "Pages"
   weight = 2
