@@ -7,16 +7,25 @@
 
                 <!--Info-->
                 <ul class="info pull-left clearfix">
-                    <li class="email"><a href="mailto:companymail@mail.com"><span class="icon flaticon-email2"></span> companymail@gmailcom</a></li>
-                    <li class="phone"><a href="#"><span class="icon flaticon-phone325"></span> (880) 172 380 1729 </a></li>
+                    <li class="email"><a href="mailto:{{ .Site.Data.general.email}}"><span class="icon flaticon-email2"></span> {{ .Site.Data.general.email}}</a></li>
+                    <li class="phone"><a href="#"><span class="icon flaticon-phone325"></span> {{ .Site.Data.general.phone}} </a></li>
                 </ul>
 
                 <!--Social Links-->
                 <div class="social-links pull-left clearfix">
-                  <a href="#"><span class="fa fa-facebook-f"></span></a>
-                    <a href="#"><span class="fa fa-twitter"></span></a>
-                    <a href="#"><span class="fa fa-linkedin"></span></a>
-                    <a href="#"><span class="fa fa-google-plus"></span></a>
+                  {{ if isset .Site.Data.general "facebook" }}
+                    <a href="{{ .Site.Data.general.facebook }}" target="_blank"><span class="fa fa-facebook-f"></span></a>
+                  {{ end }}
+                  {{ if isset .Site.Data.general "twitter" }}
+                    <a href="{{ .Site.Data.general.twitter }}" target="_blank"><span class="fa fa-twitter"></span></a>
+                  {{ end }}
+                  {{ if isset .Site.Data.general "linkedin" }}
+                    <a href="{{ .Site.Data.general.linkedin }}" target="_blank"><span class="fa fa-linkedin"></span></a>
+                  {{ end }}
+                  {{ if isset .Site.Data.general "googleplus" }}
+                    <a href="{{ .Site.Data.general.googleplus }}" target="_blank"><span class="fa fa-google-plus"></span></a>
+                  {{ end }}
+
                 </div>
 
             </div>
