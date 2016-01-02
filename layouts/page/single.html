@@ -9,6 +9,10 @@
       {{ partial "header-navbar.html" . }}
     </header>
 
+    {{ if .Params.displaytitle }}
+     {{ partial "page-title.html" . }}
+    {{end}}
+
 <!-- {{ partial "dreamland/header-style-two.html" . }} -->
 
 {{ .Content }}
