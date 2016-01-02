@@ -7,98 +7,92 @@ title = "Dreamland wth Brunch"
 
 showChildren = true
 
+# All of the top level pages are defined directly in the page frontmatter
+
+
 [menu]
-  [[menu.main]]
-  identifier = "home"
-  name       = "Home"
-  url        = "/index-1/"
-  hasChildren= true
-  weight = 10
 
   [[menu.main]]
-  identifier = "one"
   name       = "Homepage One"
   url        = "/index-1/"
-  parent     = "home"
+  parent     = "Home"
 
   [[menu.main]]
-  identifier = "two"
   name       = "Homepage Two"
   url        = "/index-2/"
-  parent     = "home"
+  parent     = "Home"
 
   [[menu.main]]
-  identifier = "single"
   name       = "One page Style"
   url        = "/index-3/"
-  parent     = "home"
+  parent     = "Home"
 
-  [[menu.main]]
-  identifier = "pages"
-  name       = "Pages"
-  url        = "/video-tour/"
-  weight = 20
+
 
   [[menu.main]]
   identifier = "gallery"
   name       = "Gallery"
   url        = "/gallery/"
-  parent     = "pages"
-  weight = 10
+  parent     = "Pages"
+  weight = 1
 
   [[menu.main]]
-  identifier = "video-tour"
   name       = "Video Tour"
   url        = "/video-tour/"
-  parent     = "pages"
-  weight = 20
+  parent     = "Pages"
+  weight = 2
 
   [[menu.main]]
-  identifier = "sidebar"
   name       = "Sidebar Page"
   url        = "/blog-two-column/"
-  parent     = "pages"
-  weight = 30
+  parent     = "Pages"
+  weight = 3
 
   [[menu.main]]
-  identifier = "left-sidebar"
   name       = "Left Sidebar"
   url        = "/blog-leftbar/"
-  parent     = "sidebar"
-  weight = 110
+  parent     = "Sidebar Page"
+  weight = 1
 
   [[menu.main]]
-  identifier = "right-sidebar"
   name       = "Right Sidebar"
   url        = "/blog/"
-  parent     = "sidebar"
-  weight = 120
+  parent     = "Sidebar Page"
+  weight = 2
 
   [[menu.main]]
-  identifier = "blog-details"
   name       = "Blog Details"
   url        = "/blog-detail/"
-  parent     = "sidebar"
-  weight = 130
+  parent     = "Sidebar Page"
+  weight = 3
 
 
   [[menu.main]]
-  identifier = "blog-page"
-  name       = "Blog"
+  name       = "Blog Normal"
   url        = "/blog/"
-  parent     = "blog"
-  weight = 110
+  parent     = "Blog"
+  weight = 1
 
   [[menu.main]]
-  identifier = "blog-two-column"
   name       = "Blog Two Column"
   url        = "/blog-two-column/"
-  parent     = "blog"
-  weight = 120
+  parent     = "Blog"
+  weight = 2
 
   [[menu.main]]
-  identifier = "blog-details-again"
   name       = "Blog Details"
   url        = "/blog-detail/"
-  parent     = "blog"
-  weight = 130
+  parent     = "Blog"
+  weight = 3
+
+  [[menu.main]]
+  name       = "Gallery Full Width"
+  url        = "/gallery/"
+  parent     = "Gallery"
+  weight = 1
+
+  [[menu.main]]
+  name       = "Gallery Boxed"
+  url        = "/gallery-2/"
+  parent     = "Gallery"
+  weight = 2
