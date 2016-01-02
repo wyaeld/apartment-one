@@ -9,6 +9,10 @@
       {{ partial "header-navbar.html" . }}
     </header>
 
+    {{ if .Params.debug }}
+     {{ partial "debug.html" . }}
+    {{end}}
+
     {{ if .Params.displaytitle }}
      {{ partial "page-title.html" . }}
     {{end}}
