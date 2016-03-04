@@ -1,9 +1,8 @@
 {{ partial "head.html" . }}
 
-<div class="page-wrapper">
+{{ partial "dreamland/header-style-two.html" . }}
 
     <section id="main">
-      <h2>Recent Pages</h2>
       <div>
         {{ range first 10 .Data.Pages }}
             {{ .Render "summary"}}
@@ -11,6 +10,7 @@
       </div>
     </section>
 
+<div class="page-wrapper">
     <section id="main">
       <h2>Dreamland</h2>
       <ul>
@@ -22,5 +22,5 @@
 
 </div>
 <!--End pagewrapper-->
-
+{{ .Render "index-2.html"}}
 {{ partial "footer.html" . }}
