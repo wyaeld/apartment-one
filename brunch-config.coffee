@@ -1,7 +1,7 @@
 # brunch-config.coffee
 module.exports = config:
   paths:
-    public: 'static'
+    public: 'public'
     watched: ['app','vendor']
   files:
     javascripts:
